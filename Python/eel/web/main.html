@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погода</title>
+    <link rel="shortcut icon" href="icons/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <script src="/eel.js"></script>
+</head>
+<body>
+
+    <div id="preloader">
+        <div id="loader">
+            <div id="loader-img">
+                <img src="icons/favicon.png" alt="icon">
+            </div>
+            <div id="loader-text">
+                Погода
+            </div>
+        </div>
+    </div>
+
+    <div class="panel">
+        <div class="left">
+            <div id="city">Город</div>
+            <div id="mini-weather">0°</div>
+        </div>
+
+        <div class="right">
+            <div id="time">00:00</div>
+            <div id="battery-charge">0%</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <input type="text" id="location" placeholder="Введите название города ..." required="" value="Худжанд">
+        <button id="show">Узнать погоду</button>
+        <div id="info"></div>
+        <div id="celsius"></div>
+    </div>
+
+    <audio id="voice-the-weather">
+        <source src="audios/weather.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

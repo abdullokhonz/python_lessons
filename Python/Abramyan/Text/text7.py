@@ -1,0 +1,7 @@
+file = open('hee.txt', 'r+', encoding='UTF-8')
+body = file.read()
+file = open('hee.txt', 'w', encoding='UTF-8')
+first_line = input('>>>')
+file.writelines(first_line)
+file = open('hee.txt', 'a', encoding='UTF-8')
+file.write('\n' + body)

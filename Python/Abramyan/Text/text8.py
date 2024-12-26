@@ -1,0 +1,8 @@
+f_file = open('hee.txt', 'r+', encoding='UTF-8')
+f_body = f_file.read()
+f_file = open('hee.txt', 'w', encoding='UTF-8')
+s_file = open('wee.txt', 'r+', encoding='UTF-8')
+s_body = s_file.read()
+f_file.write(s_body)
+f_file = open('hee.txt', 'a', encoding='UTF-8')
+f_file.write('\n' + f_body)

@@ -1,0 +1,17 @@
+import math
+x1 = float(input("X1 = "))
+y1 = float(input("Y1 = "))
+x2 = float(input("X2 = "))
+y2 = float(input("Y2 = "))
+x3 = float(input("X3 = "))
+y3 = float(input("Y3 = "))
+a = math.sqrt(math.pow(x2 - x1, 2) + math.pow(y2 - y1, 2))
+b = math.sqrt(math.pow(x3 - x2, 2) + math.pow(y3 - y2, 2))
+c = math.sqrt(math.pow(x1 - x3, 2) + math.pow(y1 - y3, 2))
+p = (a + b + c) / 2
+s = math.sqrt(p * (p - a) * (p - b) * (p - c))
+print("a = ", a)
+print("b = ", b)
+print("c = ", c)
+print("P = ", p)
+print("S = " ,s)

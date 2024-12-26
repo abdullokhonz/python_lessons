@@ -1,0 +1,5 @@
+x1 = float(input("X1: "))
+x2 = float(input("X2: "))
+print("X1: ", x1)
+print("X2: ", x2)
+print("Расстояние: ", abs(x2 - x1))
