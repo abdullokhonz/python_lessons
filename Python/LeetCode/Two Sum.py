@@ -1,15 +1,15 @@
-def two_sum(nums, target):
-    prev_map = {}
+class TwoSum:
+    def twoSum(self, nums, target):
+        num_dict = {}
 
-    for i, n in enumerate(nums):
-        diff = target - n
-        if diff in prev_map:
-            return [prev_map[diff], i]
-        prev_map[n] = i
+        for i, num in enumerate(nums):
+            complement = target - num
+            if complement in num_dict:
+                return [num_dict[complement], i]
+            num_dict[num] = i
 
-    return
+        return []
 
-
-print(two_sum([2, 7, 11, 15], 9))
-print(two_sum([3, 2, 4], 6))
-print(two_sum([3, 3], 6))
+two_sum = TwoSum()
+result = two_sum.twoSum([2, 7, 11, 15], 9)
+print(result)
