@@ -18,4 +18,5 @@ class RomanToInteger:
 
 
 test = RomanToInteger()
+print(test.romanToInt("III"))
 print(test.romanToInt("IV"))
