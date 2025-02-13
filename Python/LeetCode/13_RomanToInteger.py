@@ -17,6 +17,5 @@ class RomanToInteger:
         return total
 
 
-test = RomanToInteger()
-print(test.romanToInt("III"))
+test: RomanToInteger = RomanToInteger()
 print(test.romanToInt("IV"))
