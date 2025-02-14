@@ -1,6 +1,7 @@
 import telebot
+from ..tg_tokens import token_lesson49 as token
 
-TOKEN = '7396159893:AAFSWzBJqHFRSSVzw5tl7XaJTypIqJC4NLY'
+TOKEN = token.TOKEN
 
 bot = telebot.TeleBot(TOKEN)
 

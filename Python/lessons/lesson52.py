@@ -1,8 +1,9 @@
 import telebot
 import requests
+from ..tg_tokens import token_lesson52 as token
 
-bot = telebot.TeleBot('7332524337:AAGjs1XB2aDtmKVijXFjgAgB60GoxYg8_xY')
-API = 'fa688ebab2a48fdda4b7e3c8d9818857'
+bot = telebot.TeleBot(token.TOKEN)
+API = token.API
 
 
 @bot.message_handler(commands=['start'])

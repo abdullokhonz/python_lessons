@@ -1,1 +1,3 @@
-TOKEN = '7035845899:AAHaYMn3Hi4sGkvSa3yWBjzEcCnINpk1kKk'
+from ...tg_tokens import token_config as token
+
+TOKEN = token.TOKEN

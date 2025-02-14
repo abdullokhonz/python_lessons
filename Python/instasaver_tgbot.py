@@ -2,9 +2,10 @@
 # from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 # import instaloader
 # import os
+# import tg_tokens.token_instasaver_tgbot as token
 #
 # # Bot tokenini BotFather'dan olingan token bilan almashtiring
-# TOKEN = '6816242544:AAGb5Kx_n6NaFckomlFEXbCPr8-nbsGuv8k'
+# TOKEN = token.TOKEN
 #
 # # Instagram yuklovchi ob'ektni yaratish
 # loader = instaloader.Instaloader()
