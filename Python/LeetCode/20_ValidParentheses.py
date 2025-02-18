@@ -1,4 +1,4 @@
-class ValidParentheses:
+class Solution:
     def isValid(self, s: str) -> bool:
         stack: list[str] = []
         mapping: dict[str: str] = {')': '(', '}': '{', ']': '['}
@@ -12,12 +12,3 @@ class ValidParentheses:
                 stack.append(char)
 
         return not stack
-
-
-test = ValidParentheses()
-
-print(test.isValid("()"))  # True
-print(test.isValid("()[]{}"))  # True
-print(test.isValid("(]"))  # False
-print(test.isValid("([)]"))  # False
-print(test.isValid("{[]}"))  # True

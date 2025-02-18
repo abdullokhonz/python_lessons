@@ -1,4 +1,4 @@
-class RomanToInteger:
+class Solution:
     def romanToInt(self, s: str) -> int:
         roman: dict = {
             "I": 1, "V": 5, "X": 10, "L": 50,
@@ -15,7 +15,3 @@ class RomanToInteger:
             prev_value = value
 
         return total
-
-
-test: RomanToInteger = RomanToInteger()
-print(test.romanToInt("IV"))

@@ -1,4 +1,4 @@
-class StringToInteger:
+class Solution:
     def myAtoi(self, s: str) -> int:
         s = s.lstrip()
 
@@ -21,7 +21,3 @@ class StringToInteger:
 
         result = sign * result
         return max(min(result, 2 ** 31 - 1), -2 ** 31)
-
-
-test = StringToInteger()
-print(test.myAtoi("   -042"))
