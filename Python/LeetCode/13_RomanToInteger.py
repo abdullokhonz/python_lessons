@@ -1,4 +1,4 @@
-class Solution:
+class RomanToInteger:
     def romanToInt(self, s: str) -> int:
         roman: dict = {
             "I": 1, "V": 5, "X": 10, "L": 50,

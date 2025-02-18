@@ -4,7 +4,7 @@ class ListNode:
         self.next = next
 
 
-class Solution:
+class MergeTwoSortedLists:
     def mergeTwoLists(self, list1: ListNode, list2: ListNode) -> ListNode:
         dummy = ListNode()
         current = dummy

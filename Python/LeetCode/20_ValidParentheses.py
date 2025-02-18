@@ -1,4 +1,4 @@
-class Solution:
+class ValidParentheses:
     def isValid(self, s: str) -> bool:
         stack: list[str] = []
         mapping: dict[str: str] = {')': '(', '}': '{', ']': '['}

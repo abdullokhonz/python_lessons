@@ -1,4 +1,4 @@
-class Solution:
+class TwoSum:
     def twoSum(self, nums: list[int], target: int) -> list[int]:
         num_dict: dict = {}
 
